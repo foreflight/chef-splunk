@@ -70,6 +70,7 @@ default['splunk']['server']['runasroot'] = true
 
 default['splunk']['splunk_servers'] = []
 default['splunk']['repo_install'] = false
+default['splunk']['setup_auth'] = true
 
 case node['platform_family']
 when 'rhel'
