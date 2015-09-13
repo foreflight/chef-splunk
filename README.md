@@ -58,6 +58,11 @@ General attributes:
   listens to. This is set to the default for HTTPS, 443, as it is
   configured by the `setup_ssl` recipe.
 * `node['splunk']['ratelimit_kilobytessec']`: The default splunk rate limiting rate can now easily be changed with an attribute.  Default is 2048KBytes/sec.
+* `node['splunk']['splunk_servers']`: An alternative to using the Chef server search functionality to discover splunk 
+  servers.
+* `node['splunk']['repo_install']`: Select installation method, default is to download the package, set this to true to
+  use an OS repository like yum based install method.
+* `node['splunk']['setup_auth']`: Allow the client to optionaly not configure auth on a client install.
 
 The two URL attributes below are selected by platform and architecture
 by default.
